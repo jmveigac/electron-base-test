@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Hola mundo!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron Base Template</title>
 </head>
-<body style="background: white;">
-    <h1>Hola mundo!</h1>
-    <p>
-        Estamos usando node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        y Electron <script>document.write(process.versions.electron)</script>.
-    </p>
+<body>
+  <h1>Electron Base Template</h1>
+  <p>
+    Node <span id="node-version"></span>,
+    Chrome <span id="chrome-version"></span> y
+    Electron <span id="electron-version"></span>.
+  </p>
+  <script src="./renderer.js"></script>
 </body>
 </html>
