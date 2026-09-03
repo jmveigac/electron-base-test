@@ -19,6 +19,6 @@
   "devDependencies": {
     "@electron/packager": "20.0.3",
     "electron": "43.1.1",
-    "jest": "30.4.2"
+    "jest": "30.5.0"
   }
 }
